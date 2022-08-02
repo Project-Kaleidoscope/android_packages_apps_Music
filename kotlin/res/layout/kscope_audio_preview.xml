@@ -51,11 +51,14 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
+            <ink.kscope.music.widget.MarqueeTextView
                 android:id="@+id/line1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ellipsize="end"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
                 android:paddingTop="5dp"
                 android:singleLine="true"
                 android:textAppearance="?android:textAppearanceLarge" />
